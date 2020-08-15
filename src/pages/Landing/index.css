@@ -1,0 +1,80 @@
+.intro-wrapper {
+  padding: 0px 40px;
+  height: calc(100vh);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+}
+
+.intro-wrapper .intro  div:not(.line-1):not(.cta) {
+  font-size: 54px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.intro-wrapper .intro div.line-1 {
+  color: #808080;
+}
+.intro-wrapper .intro div.line-2 span,
+.intro-wrapper .intro div.line-3 span {
+  color: #00ff9c;
+  color: transparent;
+  background: linear-gradient(
+    to right,
+    #f2db92 20%,
+    #b98d14 40%,
+    #b98d14 60%,
+    #f2db92 80%
+  ) !important;
+  background-clip: text !important;
+}
+
+.intro-wrapper .intro .cta {
+  display: flex;
+  justify-items: center;
+  margin-top: 20px;
+}
+.intro-wrapper .intro .cta div {
+  width: 150px;
+  height: 50px;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.intro-wrapper .intro .cta div:first-child {
+  background-color: #b98d14;
+  color: #fff;
+}
+.intro-wrapper .intro .cta div:first-child:hover {
+  background-color: #000;
+  border: 1px solid #b98d14;
+  color: #b98d14;
+}
+.intro-wrapper .intro .cta div:last-child {
+  margin-left: 20px;
+  border: 1px solid #b98d14;
+  border-radius: 2px;
+  text-align: center;
+  color: #b98d14;
+}
+.intro-wrapper .intro .cta div:last-child:hover {
+  background-color: #b98d14;
+  color: #fff;
+}
+.intro-wrapper .hero-image {
+  margin-left: auto;
+  padding-right: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-wrapper .intro .cta div {
+    width: 132px;
+  }
+  .intro-wrapper .hero-image {
+    display: none;
+  }
+}

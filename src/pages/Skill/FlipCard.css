@@ -1,0 +1,58 @@
+.flip-card {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    transform-style: preserve-3d;
+    transition: 1s;
+    margin: 15px;
+    color: #ba8d14;
+}
+.flip-card:hover .flip-card-front {
+    transform: rotateX(-180deg);
+}
+.flip-card:hover .flip-card-back {
+    transform: rotateX(0deg);
+}
+.flip-card .flip-card-front {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 1s;
+    border: 0.7px solid #f2db92;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip-card .flip-card-back {
+    cursor: pointer;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 1s;
+    border: 0.7px solid #f2db92;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip-card .flip-card-back .name {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.flip-card .flip-card-back .levels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

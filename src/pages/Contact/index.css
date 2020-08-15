@@ -1,0 +1,113 @@
+/* #272727 */
+.contact {
+  background-color: #272727;
+  box-sizing: border-box;
+  padding: 50px 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5em;
+}
+
+#contact input,
+#contact textarea {
+  outline: none;
+  width: 400px;
+  height: 40px;
+  border: 0.5px solid orange;
+  background-color: transparent;
+  color: antiquewhite;
+}
+
+#contact textarea {
+  height: 200px;
+  resize: none;
+}
+
+#contact input:focus::placeholder,
+#contact textarea:focus::placeholder {
+  color: transparent;
+}
+
+#contact .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#contact button.send {
+  background-color: orange;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#contact button.send:hover {
+  background-color: #000;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 0.5px solid orange;
+  color: orange;
+  cursor: pointer;
+}
+
+#contact .social-media {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  /* gap: 2em; */
+}
+
+#contact .social-media .fullname,
+#contact .social-media .address,
+#contact .social-media .phone,
+#contact .social-media .emailadd {
+  margin: 10px 0px;
+  font-size: 22px;
+}
+
+#contact .social-media .fullname i,
+#contact .social-media .address i,
+#contact .social-media .phone i,
+#contact .social-media .emailadd i {
+  margin-right: 20px;
+}
+
+#contact .social-media .emailadd {
+  margin-bottom: 50px;
+}
+#contact .social-media .social-icons {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+#contact .social-media .social-icons span {
+  cursor: pointer;
+}
+#contact .social-media .copywrite {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    flex-direction: column;
+    padding: 50px 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  #contact input,
+  #contact textarea {
+    width: 90vw;
+  }
+  #contact .social-media {
+    width: 90vw;
+    padding-top: 50px;
+  }
+}
